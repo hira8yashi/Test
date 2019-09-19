@@ -2,7 +2,4 @@ jobs:
   build:
     steps:
       - checkout
-
-      - run:
-        name: Test
-        command: mvn package
+      - run: mvn package
