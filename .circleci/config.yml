@@ -2,4 +2,8 @@ jobs:
   build:
     steps:
       - checkout
-      - run: mvn package
+
+      - run:
+          name: Test
+          command: mvn package
+          woring_directory: web-app
