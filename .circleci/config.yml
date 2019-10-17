@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
 
-      - run: 
-          command: mvn package
+      - run: mvn package
           working_directory: web-app
 
