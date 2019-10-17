@@ -12,4 +12,4 @@ jobs:
           working_directory: web-app
           
       - store_artifacts:
-          path: /web-app.war
+          path: web-app.war
