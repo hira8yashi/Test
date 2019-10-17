@@ -1,9 +1,11 @@
 jobs:
   build:
+    
+    docker: # run the steps with Docker
+    - image: circleci/openjdk:8-jdk-stretch
+    
     steps:
       - checkout
 
-      - run:
-          name: Test
-          command: mvn package
+      - run: mvn package
           woring_directory: web-app
